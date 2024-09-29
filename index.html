@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
@@ -46,5 +47,23 @@
 
     <button type="submit" onclick="verificarSal()">Calcular</button>
     <div id="sal"></div>
+
+    <hr>
+
+    <h1>3)-Cardápio</h1>
+    <p>001 - Pizza 4 pedaços - R$30,00</p>
+    <p>002 - Pizza 8 pedaços - R$45,00</p>
+    <p>003 - Pizza 12 pedaços - R$60,00</p>
+    <p>004 - Refrigerante lata - R$7,00</p>
+    <p>005 - Refrigerante 600ml - R$10,00</p>
+    <p>006 - Refrigerante 1l - R$14,00</p>
+    <p>007 - Refrigerante 2l - R$18,00</p>
+
+    <label for="pedido">Digite os códigos dos itens separados por vírgula (ex: 001,002,005):</label>
+    <input type="text" id="pedido" />
+    <button onclick="calcularTotal()">Calcular Total</button>
+
+    <h2>Total: <span id="total"></span></h2>
+
 </body>
 </html>
